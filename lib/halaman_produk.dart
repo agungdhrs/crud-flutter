@@ -23,7 +23,7 @@ class _HalamanProdukState extends State<HalamanProduk> {
 
   Future _getdata() async {
     try {
-      final respon = await http.get(Uri.parse('http://192.168.1.13/api_produk/read.php'));
+      final respon = await http.get(Uri.parse('http://192.168.1.3/api_produk/read.php'));
       if (respon.statusCode == 200) {
         final data = jsonDecode(respon.body);
         setState(() {

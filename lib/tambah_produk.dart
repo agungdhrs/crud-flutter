@@ -20,7 +20,7 @@ class _TambahProdukState extends State<TambahProduk> {
 
   Future _simpan() async {
     final respon = await http
-        .post(Uri.parse('http://192.168.1.13/api_produk/create.php'), body: {
+        .post(Uri.parse('http://192.168.1.3/api_produk/create.php'), body: {
       'nama_produk': nama_produk.text,
       'harga_produk': harga_produk.text,
     });
